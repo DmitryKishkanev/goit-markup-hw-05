@@ -21,28 +21,32 @@
     <header class="header">
       <div class="container main-nav">
         <nav class="nav">
-          <a class="logo link" href="./index.html" aria-label="Логотип">
+          <a class="logo" href="./index.html" aria-label="Логотип">
             <span class="web">Web</span>Studio
           </a>
 
           <ul class="site-nav list">
             <li class="nav-item">
-              <a class="link current" href="" aria-label="Студия">Студия</a>
+              <a class="nav-link current" href="" aria-label="Студия">Студия</a>
             </li>
             <li class="nav-item">
-              <a class="link" href="./portfolio.html" aria-label="Портфолио"
+              <a class="nav-link" href="./portfolio.html" aria-label="Портфолио"
                 >Портфолио</a
               >
             </li>
             <li class="nav-item">
-              <a class="link" href="" aria-label="Контакты">Контакты</a>
+              <a class="nav-link" href="" aria-label="Контакты">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <ul class="auth-nav list">
           <li class="nav-item">
-            <a class="link" href="mailto:info@devstudio.com" aria-label="Имейл">
+            <a
+              class="auth-link"
+              href="mailto:info@devstudio.com"
+              aria-label="Имейл"
+            >
               <svg class="auth-icon" width="16" height="12">
                 <use href="./images/sprite/sprite.svg#icon-envelope"></use>
               </svg>
@@ -51,7 +55,7 @@
           </li>
           <li class="nav-item">
             <a
-              class="phone-link link"
+              class="auth-link"
               href="tel:+38 096 111 11 11"
               aria-label="Телефон"
             >
@@ -145,26 +149,35 @@
         <div class="container">
           <h2 class="classes-title">Чем мы зпнимаемся</h2>
           <ul class="classes-items list">
-            <li>
+            <li class="class-item">
               <img
                 src="./images/business/box1.jpg"
                 alt="руки на клавиатуре"
                 width="370"
               />
+              <div class="class-category">
+                <p class="category-title">Десктопные приложения</p>
+              </div>
             </li>
-            <li>
+            <li class="class-item">
               <img
                 src="./images/business/box2.jpg"
                 alt="человек с телефоном за ноутбуком"
                 width="370"
               />
+              <div class="class-category">
+                <p class="category-title">Мобильные приложения</p>
+              </div>
             </li>
-            <li>
+            <li class="class-item">
               <img
                 src="./images/business/box3.jpg"
                 alt="в руках планшет и стилус"
                 width="370"
               />
+              <div class="class-category">
+                <p class="category-title">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -336,7 +349,7 @@
     <!--Подвал-->
     <footer class="main-footer">
       <div class="footer-address">
-        <a class="logo link" href="/index.html" aria-label="Логотип">
+        <a class="logo" href="/index.html" aria-label="Логотип">
           <span class="web">Web</span>Studio
         </a>
         <address>
@@ -346,14 +359,17 @@
           <ul class="list">
             <li class="address-element">
               <a
-                class="link"
+                class="address-link"
                 href="mailto:info@devstudio.com"
                 aria-label="Имейл"
                 >info@devstudio.com</a
               >
             </li>
             <li class="address-element">
-              <a class="link" href="tel:+38 096 111 11 11" aria-label="Телефон"
+              <a
+                class="address-link"
+                href="tel:+38 096 111 11 11"
+                aria-label="Телефон"
                 >+38 096 111 11 11</a
               >
             </li>
