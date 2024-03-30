@@ -81,6 +81,7 @@
             type="button"
             class="hero-button"
             aria-label="Заказать услугу"
+            data-modal-open
           >
             Заказать услугу
           </button>
@@ -400,5 +401,32 @@
         </a>
       </div>
     </footer>
+
+    <!-- Модельное окно  -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg class="icon-close" width="11" height="11">
+            <use href="./images/sprite/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Скрипт модельного окна -->
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-modal-open]"),
+        closeModalBtn: document.querySelector("[data-modal-close]"),
+        modal: document.querySelector("[data-modal]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+      }
+    </script>
   </body>
 </html>
