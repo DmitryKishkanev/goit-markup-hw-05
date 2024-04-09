@@ -84,6 +84,7 @@ header .logo {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+  transition: color var(--transition-time) var(--transition-type);
 }
 
 .web {
@@ -121,6 +122,8 @@ header .logo {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+
+  transition: color var(--transition-time) var(--transition-type);
 }
 
 .nav-link:hover,
@@ -172,6 +175,8 @@ header .logo {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 2%;
+
+  transition: color var(--transition-time) var(--transition-type);
 }
 
 .auth-icon {
@@ -477,6 +482,9 @@ header .logo {
   background-repeat: no-repeat;
   background-position: center;
   color: var(--icon-network);
+
+  transition: color var(--transition-time) var(--transition-type),
+    background var(--transition-time) var(--transition-type);
 }
 
 .team-link:not(:last-child) {
@@ -516,6 +524,8 @@ header .logo {
   background-repeat: no-repeat;
   background-position: center;
   color: var(--icon-logo);
+
+  transition: color var(--transition-time) var(--transition-type);
 }
 
 .logos-clients:not(:last-child) {
@@ -561,6 +571,8 @@ footer .logo {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+
+  transition: color var(--transition-time) var(--transition-type);
 }
 
 address .location {
@@ -611,6 +623,8 @@ address .location {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-icon);
+
+  transition: background var(--transition-time) var(--transition-type);
 }
 
 .footer-link:not(:last-child) {
@@ -724,6 +738,9 @@ address .location {
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.48px;
+
+  transition: color var(--transition-time) var(--transition-type),
+    background var(--transition-time) var(--transition-type);
 }
 
 .filter-buttons .button + .button {
